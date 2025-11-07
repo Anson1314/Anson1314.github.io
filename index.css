@@ -30,6 +30,8 @@
     font-family: monospace;
 
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* 3. Webpage padding */
@@ -38,7 +40,7 @@ body {
 }
 
 /* TODO 9: Fill in the media query list to support responsive design */
-@media /*<media-query-list>*/ {
+@media (min-width: 768px) {
     body {
         padding: 2rem 20%;
     }
@@ -112,7 +114,7 @@ nav > *:last-child {
 }
 
 /* TODO 9: Fill in the media query list to support responsive design */
-@media /*<media-query-list>*/ {
+@media (min-width: 768px) {
     #anchor-list-trigger {
         display: none;
     }
@@ -133,7 +135,7 @@ nav > *:last-child {
 }
 
 /* TODO 9: Fill in the media query list to support responsive design */
-@media /*<media-query-list>*/ {
+@media (min-width: 768px) {
     #anchor-list {
         display: flex;
 
@@ -151,7 +153,7 @@ nav > *:last-child {
 
 /* TODO 10: Fill in the pseudo-class to change the color of
  * the link entry in navigation bar when the mouse hangs on it */
-#anchor-list > li:/*pseudo-class*/ {
+#anchor-list > li:hover {
     background-color: var(--primary);
     color: var(--on-primary);
 }
@@ -176,8 +178,7 @@ section {
 /* 5a. Hero section */
 /* TODO 11: Declare the display property to separate the content on the 2 sides */
 #hero {
-
-
+    display: flex;
     justify-content: space-between;
 }
 
@@ -192,7 +193,7 @@ section {
 /* 5c. Skills section */
 /* TODO 11: Declare the display property to align the children elements horizontally */
 #skill-set {
-
+    display: flex;
 
     gap: 1rem;
 
@@ -233,9 +234,13 @@ footer {
  * Give appropriate space against the 2 neighbour sections, and
  * style the border to be thicker.
 */
+hr {
+    margin: 3rem 0;
+    border: 2px solid var(--gray-200);
+}
 
 /* TODO 13: Assign a selector to increase the line height of content,
  * but not the headings or functional elements */
-/*selector*/ {
+section p, section li {
     line-height: 150%;
 }
