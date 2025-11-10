@@ -181,6 +181,7 @@ section {
 
 #avatar {
     width: 20%;
+    height: auto
     aspect-ratio: 1/1;
 }
 
