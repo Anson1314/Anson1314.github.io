@@ -233,9 +233,11 @@ footer {
 */
 hr {
     margin: 3rem 0;
-    border: 2px solid var(--gray-200);
-    background-color: var(--gray-200);
-    height: 2px;
+    border: none;
+    height: 3px;
+    background-color: #666666;
+    opacity: 1;
+    width: 100%;
 }
 
 /* TODO 13: Assign a selector to increase the line height of content,
