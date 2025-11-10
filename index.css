@@ -180,8 +180,7 @@ section {
 }
 
 #avatar {
-    width: 35mm;
-    height: 45mm;
+    width: 20%;
     aspect-ratio: 1/1;
 }
 
