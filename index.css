@@ -234,6 +234,7 @@ footer {
 hr {
     margin: 3rem 0;
     border: 2px solid var(--gray-200);
+    background-color: var(--gray-200);
     height: 2px;
 }
 
